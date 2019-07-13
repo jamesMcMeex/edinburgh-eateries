@@ -1,0 +1,22 @@
+@import "../../scss/helpers";
+
+.eateries {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+  text-align: left;
+
+  &__row {
+    border-bottom: 1px solid colour(white);
+  }
+
+  &__heading,
+  &__data {
+    padding: calc(#{$default-spacing} / 2) 0;
+  }
+
+  &__heading {
+    font-weight: 700;
+  }
+}

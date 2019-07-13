@@ -1,0 +1,38 @@
+@import "../../scss/helpers";
+
+.tabs {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    border-bottom: 0.0625rem solid colour("accent-secondary");
+    list-style: none;
+  }
+
+  &__tab {
+    min-width: 4.375rem;
+    padding: 1.25rem;
+    border: 0;
+    background-color: colour("accent-secondary");
+    color: colour("white");
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      &:not(:disabled) {
+            background-color: saturate(colour("accent-secondary"), 70%);
+      }
+    }
+
+    &.active {
+      background-color: colour("accent-secondary");
+    }
+    &:disabled {
+      cursor: not-allowed;
+      color: rgba(colour("white"), .7);
+    }
+  }
+}

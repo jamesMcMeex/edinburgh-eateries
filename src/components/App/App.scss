@@ -1,0 +1,60 @@
+@import "../../scss/helpers";
+
+.App {
+  position: relative;
+  margin: 0 auto;
+  padding-left: $default-spacing;
+  padding-right: $default-spacing;
+  max-width: 75rem;
+  color: colour("light-grey");
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  @media (min-width: 700px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.sidebar {
+  width: 100%;
+  padding: $default-spacing;
+  background-color: colour("base-secondary");
+
+  @media (min-width: 700px) {
+    width: 15rem;
+    margin-top: 6.25rem;
+    margin-right: $default-spacing;
+  }
+
+  &__title {
+    font-size: 1.063rem;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}
+
+.controls {
+  margin-bottom: 2.8125rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__checkbox {
+    font-size: 1rem;
+    margin-bottom: 0.9375rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-input {
+    width: calc(100% - 1.75rem);
+    padding: 0.875rem 0.75rem;
+    font-size: 1rem;
+  }
+}

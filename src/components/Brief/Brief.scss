@@ -1,0 +1,14 @@
+.brief {
+  @media (min-width: 700px) {
+    margin-left: 15.625rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+  }
+}

@@ -1,0 +1,23 @@
+// SASS HELPERS
+
+// Colours
+$colours: (
+  "base-primary": #233235,
+  "base-secondary": #177E89,
+  "accent-primary": #15B097,
+  "accent-secondary": #CB48B7,
+  "white": #ffffff,
+  "light-grey": #F7F9F9,
+);
+
+// Fonts
+$base-font-size: 16px;
+$base-font-family: 'Open Sans', sans-serif;
+
+// Spacing
+$default-spacing: 1.25rem;
+
+// Colour function
+@function colour($colour) {
+  @return map-get($colours, $colour);
+}
